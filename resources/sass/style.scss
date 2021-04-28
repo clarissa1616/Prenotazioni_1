@@ -1,0 +1,308 @@
+:root {
+    --desert-sand: #DEC6AB;
+    --floral-white: #F9F5F0;
+    --dark-lava: #362F29;
+    --platinum: #E3E3E3;
+    --light-camel: #b0a392;
+    --battleship-grey: #888B8D;
+}
+
+* {
+    font-family: 'Kiwi Maru', serif;
+}
+
+.floral-white {
+    color: var(--floral-white);
+}
+
+.dark-lava {
+    color: var(--dark-lava);
+}
+
+.battleship-grey {
+    color: var(--battleship-grey)
+}
+
+.bg-collapse {
+    background-color: var(--platinum);
+}
+
+.position-center {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+}
+
+.bottega {
+    background-image: url(https://cdn.shopify.com/s/files/1/0104/2068/2809/files/IMG_9074_1024x.jpg?v=1614178521);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.text-navbar {
+    color: var(--dark-lava);
+}
+
+.text-navbar a {
+    color: var(--dark-lava);
+}
+
+.bg-footer {
+    background-color: var(--dark-lava);
+}
+
+.text-footer {
+    color: var(--floral-white);
+    font-size: 10px;
+}
+
+.text-footer a {
+    color: var(--floral-white);
+    font-size: 10px;
+}
+
+.footer-uls {
+    list-style-type: none;
+}
+
+.footer-uls li {
+    margin: 0px 3px 3px 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.ul-divider li:after {
+    content: "|";
+    position: absolute;
+    right: -6px;
+    color: var(--floral-white);
+    top: -1px;
+}
+
+.ul-divider li:last-child:after {
+    content: "";
+}
+
+.vh50 {
+    height: 50vh;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.filter {
+    filter: brightness(50%);
+}
+
+.filter:hover {
+    filter: brightness(1);
+    transition-duration: 0.3s;
+}
+
+.video-min-dim {
+    min-height: 50vh;
+    min-width: 50vw;
+}
+
+#bookingBtn {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: 1;
+    height: 106px;
+    display: table;
+}
+
+.bg-modal {
+    background-color: var(--dark-lava);
+    color: floralwhite;
+}
+
+.bg-input {
+    background-color: #554f4a;
+    border-style: none;
+}
+
+.bg-input:focus {
+    background-color: #554f4a;
+    border-style: none;
+    color: floralwhite;
+}
+
+.btn-book {
+    border-right: none;
+}
+
+.video-max-dim {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.absolute-bottom-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.btn-outline-none:focus,
+.btn-outline-none:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.li-style {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.overview {
+    background-image: url(./img/Overview-5.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.lacorte {
+    background-image: url(./img/la_corte.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.ilborgo {
+    background-image: url(./img/il_borgo.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.lavilla {
+    background-image: url(./img/la_villa.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overview-borgo {
+    background-image: url(./img/overview-borgo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.masthead-lacorte {
+    background-image: url(./img/cover_corte_magnifica.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.masthead-lavilla {
+    background-image: url(./img/cover_villa_bella.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.masthead-ilborgo {
+    background-image: url(./img/cover_borgo_magnifica.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 300px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.overlayGlobal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(43, 36, 30, 0.6);
+    transition: all .3s;
+    display: table;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#roomname {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#roomname .room-sottotitolo {
+    font-weight: 500;
+    font-size: 13px;
+    max-width: 600px;
+}
+
+.btn-datatable-add {
+    position: relative;
+    top: -3px;
+}
+
+.bg-dark-white {
+    background-color: #E0E0E0;
+}
+
+.menu-booking li {
+    display: inline-block;
+    margin-right: 50px
+}
+
+.bg-fluid {
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
+.opacity-5 {
+    opacity: 0.5
+}
+
+.booking_data {
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 10px;
+}
+
+.absolute-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1100;
+}
